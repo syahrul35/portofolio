@@ -202,9 +202,15 @@ footer{
         display: none;
     }
 
-    .nav li a{
+    .nav li{
         display: flex;
         justify-content: space-between;
+        margin: 0 0.2em;
+    }
+
+    .nav > li > a{
+        width: max-content;
+        padding: 1em 1em;
     }
 
     .pendidikan, .keahlian{
