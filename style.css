@@ -38,6 +38,7 @@ p{
 /* navbar */
 ul.nav {
     position: sticky;
+    justify-content: right;
     list-style: none;
     background-color: rgb(39, 34, 34);
     padding: 0;
@@ -48,7 +49,7 @@ ul.nav {
 
 .nav > li {
     display: inline-block;
-    margin: auto;
+    margin: 0 1em;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
 }
@@ -192,8 +193,17 @@ footer{
 
 /* Responsif */
 @media screen and (max-width: 600px) {
-    ul li .img-nav img{
+    ul.nav {
+        display: flex;
+    }
+
+    .img-nav img{
         display: none;
+    }
+
+    .nav li a{
+        display: flex;
+        justify-content: space-between;
     }
 
     .pendidikan, .keahlian{
