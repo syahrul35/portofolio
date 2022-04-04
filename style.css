@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=PT+Sans+Narrow&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,13 +8,16 @@ html, body {
 }
 
 h1,h2,h3 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-weight: 700;
     font-size: 1.6em;
 }
 
 p{
+    font-family: 'Cabin', sans-serif;
     font-size: 1.1em;
+    line-height: 1.6em;
+    font-weight: 400;
 }
 
 .landing-page{
@@ -76,7 +81,12 @@ li.img-nav {
 }
 
 .img-nav > img {
+    border-radius: 100%;
     width: 100%;
+}
+
+li.img-nav{
+    background-color: rgb(39, 34, 34);
 }
 
 hr{
@@ -119,8 +129,23 @@ hr{
     padding-top: 3em;
 }
 
+.portofolio{
+    text-decoration: underline;
+}
+
+.skill{
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+    vertical-align: top;
+}
+
+.hardskill, .softskill{
+    max-width: 40%;
+}
+
 .img-portofolio{
-    max-width: 15em;
+    max-width: 10em;
     display: inline-block;
     vertical-align: middle;
     width: 90%;
